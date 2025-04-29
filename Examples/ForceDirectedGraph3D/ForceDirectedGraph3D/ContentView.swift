@@ -159,7 +159,7 @@ struct ContentView: View {
             .frame(depth: 10.0)
             
             
-        }.ornament(attachmentAnchor: .scene(alignment: .bottom)) {
+        }.ornament(attachmentAnchor: .scene(.bottom)) {
             Button {
                 
             } label: {
