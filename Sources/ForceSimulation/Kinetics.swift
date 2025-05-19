@@ -7,8 +7,8 @@ where Vector: SimulatableVector & L2NormCalculatable {
     ///
     /// Ordered as the nodeIds you passed in when initializing simulation.
     /// They are always updated.
-    @usableFromInline
-    package var position: UnsafeArray<Vector>
+    /// Exposed publicly so examples & clients can read out the latest positions.
+    public var position: UnsafeArray<Vector>
 
     // public var positionBufferPointer: UnsafeMutablePointer<Vector>
 
